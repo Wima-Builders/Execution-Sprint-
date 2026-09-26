@@ -15,7 +15,19 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 @media(max-width:800px){.grid,.grid2{grid-template-columns:1fr}.hero h1{font-size:36px}.wrap{padding:0 17px}h2{font-size:25px}}
 @media print{body{background:#fff}.card{box-shadow:none}.hero{padding:30px 0}.footer{display:none}}
 </style>
-</head>
+<style id="wima-nav-css">
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+.wima-topbar{position:sticky;top:0;z-index:999;background:rgba(24,24,24,.97);border-bottom:1px solid #4d4429;padding:8px 0}
+.wima-nav{display:flex;gap:6px;align-items:center;overflow-x:auto;white-space:nowrap}
+.wima-nav a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:7px;font-size:12px;font-weight:700}
+.wima-nav a:hover,.wima-nav a:focus{background:#3a3424;color:#e6c85c;outline:none}
+.wima-progress{height:3px;background:#2c2c2c}.wima-progress span{display:block;height:3px;width:0;background:#c9a227}
+.wima-tools{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.wima-tools button{border:1px solid #c9a227;background:#fff9e8;border-radius:8px;padding:9px 12px;font-weight:700;cursor:pointer}
+.wima-tools button:hover{background:#f0df9b}
+.wima-back{display:inline-block;margin:10px 0 0;color:#5b3b8c;text-decoration:none;font-size:13px;font-weight:700}
+@media print{.wima-topbar,.wima-tools,.wima-back{display:none!important}}
+</style></head>
 <body>
 <header class="hero"><div class="wrap">
 <div class="eyebrow">Wima Builders | Executive Operating System</div>
@@ -24,9 +36,14 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 <span class="tag">25 September–23 December 2026</span><span class="tag">Version 1.0</span><span class="tag">Internal Management</span>
 </div></header>
 
-<main class="wrap">
+<nav class="wima-topbar" aria-label="Document navigation">
+<div class="wrap"><div class="wima-nav"><a href="#top">↑ Top</a><a href="#section-1-1-how-this-dashboard-works">1. How This Dashboard Works</a><a href="#section-2-2-executive-north-star-metrics">2. Executive North-Star Metrics</a><a href="#section-3-3-daily-15-minute-wima-operating-huddle">3. Daily 15-Minute Wima Operating Huddle</a><a href="#section-4-4-daily-pipeline-board">4. Daily Pipeline Board</a><a href="#section-5-5-deal-hub-dashboard">5. Deal Hub Dashboard</a><a href="#section-6-6-rfq-command-board">6. RFQ Command Board</a><a href="#section-7-7-supplier-performance-dashboard">7. Supplier Performance Dashboard</a><a href="#section-8-8-wima-signature-project-control-sheet">8. Wima Signature Project Control Sheet</a><a href="#section-9-9-marketing-performance-board">9. Marketing Performance Board</a><a href="#section-10-10-customer-experience-control">10. Customer Experience Control</a><a href="#section-11-11-weekly-executive-review">11. Weekly Executive Review</a><a href="#section-12-12-rag-decision-rules">12. RAG Decision Rules</a><a href="#section-13-13-day-30-day-60-day-90-gates">13. Day-30 / Day-60 / Day-90 Gates</a><a href="#section-14-14-decision-log">14. Decision Log</a><a href="#section-15-15-the-wima-management-test">15. The Wima Management Test</a><a href="#section-16-16-dashboard-ownership-model">16. Dashboard Ownership Model</a><a href="#section-17-17-final-operating-principle">17. Final Operating Principle</a></div></div>
+<div class="wima-progress"><span id="wima-progress"></span></div></nav><main class="wrap" id="top"><div class="wima-tools" aria-label="Document tools">
+<button type="button" id="wima-print">Print / Save PDF</button>
+<button type="button" id="wima-top">Back to Top</button>
+</div>
 <section>
-<h2>1. How This Dashboard Works</h2>
+<h2 id="section-1-1-how-this-dashboard-works">1. How This Dashboard Works</h2>
 <div class="callout"><strong>Rule:</strong> the dashboard is not a reporting exercise. It is a decision system. Every metric must lead to an action, owner or management decision.</div>
 <div class="grid">
 <div class="card"><div class="num">01</div><h3>Capture</h3><p>Record every meaningful enquiry, RFQ, quote, order, delivery and project milestone.</p></div>
@@ -36,7 +53,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>2. Executive North-Star Metrics</h2>
+<h2 id="section-2-2-executive-north-star-metrics">2. Executive North-Star Metrics</h2>
 <table>
 <tr><th>Metric</th><th>Definition</th><th>Why it matters</th><th>Owner</th></tr>
 <tr><td>Qualified Enquiries</td><td>Enquiries with a real project/material need and identifiable next step.</td><td>Measures commercial demand quality.</td><td>Commercial Lead</td></tr>
@@ -52,7 +69,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>3. Daily 15-Minute Wima Operating Huddle</h2>
+<h2 id="section-3-3-daily-15-minute-wima-operating-huddle">3. Daily 15-Minute Wima Operating Huddle</h2>
 <table>
 <tr><th>Question</th><th>Required answer</th><th>Escalate when…</th></tr>
 <tr><td>New demand?</td><td>New qualified enquiries since last huddle.</td><td>High-intent lead has no owner or response.</td></tr>
@@ -67,7 +84,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>4. Daily Pipeline Board</h2>
+<h2 id="section-4-4-daily-pipeline-board">4. Daily Pipeline Board</h2>
 <table>
 <tr><th>Lead / Customer</th><th>Segment</th><th>Need</th><th>Stage</th><th>Value</th><th>Next Action</th><th>Owner</th><th>Due</th></tr>
 <tr><td>Example</td><td>Homeowner</td><td>Ceiling</td><td>Qualified</td><td>—</td><td>Confirm area + system</td><td>Sales</td><td>Today</td></tr>
@@ -76,7 +93,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>5. Deal Hub Dashboard</h2>
+<h2 id="section-5-5-deal-hub-dashboard">5. Deal Hub Dashboard</h2>
 <div class="grid">
 <div class="card"><div class="score">—</div><h3>Qualified Deal Hub Leads</h3><p class="muted">Week / Month</p></div>
 <div class="card"><div class="score">—</div><h3>Orders</h3><p class="muted">Week / Month</p></div>
@@ -90,7 +107,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>6. RFQ Command Board</h2>
+<h2 id="section-6-6-rfq-command-board">6. RFQ Command Board</h2>
 <table>
 <tr><th>RFQ ID</th><th>Customer</th><th>Requirement</th><th>Suppliers Invited</th><th>Responses</th><th>Best Quote</th><th>Turnaround</th><th>Status</th></tr>
 <tr><td>RFQ-001</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Open</td></tr>
@@ -100,7 +117,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>7. Supplier Performance Dashboard</h2>
+<h2 id="section-7-7-supplier-performance-dashboard">7. Supplier Performance Dashboard</h2>
 <table>
 <tr><th>Supplier</th><th>Categories</th><th>Verified?</th><th>Response Rate</th><th>Average Response Time</th><th>Fulfilment</th><th>Quality Issues</th><th>Trend</th></tr>
 <tr><td>Jamal Industries</td><td>—</td><td>Yes / Confirm</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -111,7 +128,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>8. Wima Signature Project Control Sheet</h2>
+<h2 id="section-8-8-wima-signature-project-control-sheet">8. Wima Signature Project Control Sheet</h2>
 <table>
 <tr><th>Project</th><th>Scope</th><th>Stage</th><th>Contract / Value</th><th>Budget</th><th>Actual</th><th>Margin</th><th>Schedule</th><th>Quality</th><th>Owner</th></tr>
 <tr><td>Project 001</td><td>—</td><td>Lead / Quote / Active / Complete</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Green / Amber / Red</td><td>Green / Amber / Red</td><td>—</td></tr>
@@ -122,7 +139,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>9. Marketing Performance Board</h2>
+<h2 id="section-9-9-marketing-performance-board">9. Marketing Performance Board</h2>
 <table>
 <tr><th>Channel</th><th>Spend</th><th>Reach</th><th>Leads</th><th>Qualified Leads</th><th>RFQs</th><th>Orders</th><th>Revenue</th></tr>
 <tr><td>Facebook / Meta</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -135,7 +152,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>10. Customer Experience Control</h2>
+<h2 id="section-10-10-customer-experience-control">10. Customer Experience Control</h2>
 <table>
 <tr><th>Moment</th><th>Standard to define</th><th>Measure</th></tr>
 <tr><td>First response</td><td>Maximum acceptable response time.</td><td>Actual response time.</td></tr>
@@ -148,7 +165,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>11. Weekly Executive Review</h2>
+<h2 id="section-11-11-weekly-executive-review">11. Weekly Executive Review</h2>
 <div class="grid2">
 <div class="card"><h3>Commercial</h3><ul><li>Qualified enquiries</li><li>RFQs</li><li>Quotes</li><li>Orders</li><li>Revenue</li><li>Gross margin</li></ul></div>
 <div class="card"><h3>Operations</h3><ul><li>Open deliveries</li><li>Active projects</li><li>Schedule risk</li><li>Quality issues</li><li>Supplier failures</li></ul></div>
@@ -158,7 +175,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>12. RAG Decision Rules</h2>
+<h2 id="section-12-12-rag-decision-rules">12. RAG Decision Rules</h2>
 <table>
 <tr><th>Status</th><th>Meaning</th><th>Management action</th></tr>
 <tr><td><strong>GREEN</strong></td><td>On track and within agreed operating range.</td><td>Continue and look for repeatability.</td></tr>
@@ -168,7 +185,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>13. Day-30 / Day-60 / Day-90 Gates</h2>
+<h2 id="section-13-13-day-30-day-60-day-90-gates">13. Day-30 / Day-60 / Day-90 Gates</h2>
 <table>
 <tr><th>Gate</th><th>Management must know</th><th>Decision</th></tr>
 <tr><td>Day 30</td><td>Where demand comes from; which products convert; early Signature traction; supplier bottlenecks.</td><td>Scale winners / fix bottlenecks / stop weak activity.</td></tr>
@@ -178,7 +195,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>14. Decision Log</h2>
+<h2 id="section-14-14-decision-log">14. Decision Log</h2>
 <table>
 <tr><th>Date</th><th>Decision</th><th>Why</th><th>Owner</th><th>Review Date</th><th>Result</th></tr>
 <tr><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
@@ -187,7 +204,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>15. The Wima Management Test</h2>
+<h2 id="section-15-15-the-wima-management-test">15. The Wima Management Test</h2>
 <div class="callout"><strong>At every weekly meeting, ask:</strong><br><br>
 1. What did the customer tell us?<br>
 2. What did the data tell us?<br>
@@ -201,7 +218,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>16. Dashboard Ownership Model</h2>
+<h2 id="section-16-16-dashboard-ownership-model">16. Dashboard Ownership Model</h2>
 <table>
 <tr><th>Function</th><th>Primary responsibility</th><th>Daily</th><th>Weekly</th><th>Monthly</th></tr>
 <tr><td>Commercial</td><td>Demand, pipeline, conversion</td><td>Update leads</td><td>Pipeline review</td><td>Segment economics</td></tr>
@@ -214,11 +231,19 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 </section>
 
 <section>
-<h2>17. Final Operating Principle</h2>
+<h2 id="section-17-17-final-operating-principle">17. Final Operating Principle</h2>
 <div class="callout"><strong>Wima should not attempt to look like a large company. It should operate with the discipline of one.</strong><br><br>
 The purpose of this dashboard is to create that discipline while Wima is still agile: one source of truth, clear ownership, measurable customer outcomes, rapid learning and evidence-based scaling.</div>
 </section>
 </main>
 
 <footer class="footer"><div class="wrap"><p><strong>Wima Builders</strong> — Executive KPI &amp; Daily Operating Dashboard</p><p class="muted">Version 1.0 | 25 September 2026 | Internal management document</p></div></footer>
-</body></html>
+<script id="wima-nav-js">
+(function(){
+const p=document.getElementById('wima-progress');
+function update(){const d=document.documentElement,m=d.scrollHeight-d.clientHeight;p.style.width=(m>0?(scrollY/m)*100:0)+'%';}
+addEventListener('scroll',update,{passive:true});update();
+document.getElementById('wima-print').addEventListener('click',()=>print());
+document.getElementById('wima-top').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+})();
+</script></body></html>
