@@ -21,7 +21,19 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 @media(max-width:800px){.grid,.grid2{grid-template-columns:1fr}.hero h1{font-size:38px}.wrap{padding:0 18px}h2{font-size:26px}}
 @media print{body{background:white}.card{box-shadow:none}.hero{padding:35px 0}.footer{display:none}}
 </style>
-</head>
+<style id="wima-nav-css">
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+.wima-topbar{position:sticky;top:0;z-index:999;background:rgba(24,24,24,.97);border-bottom:1px solid #4d4429;padding:8px 0}
+.wima-nav{display:flex;gap:6px;align-items:center;overflow-x:auto;white-space:nowrap}
+.wima-nav a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:7px;font-size:12px;font-weight:700}
+.wima-nav a:hover,.wima-nav a:focus{background:#3a3424;color:#e6c85c;outline:none}
+.wima-progress{height:3px;background:#2c2c2c}.wima-progress span{display:block;height:3px;width:0;background:#c9a227}
+.wima-tools{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.wima-tools button{border:1px solid #c9a227;background:#fff9e8;border-radius:8px;padding:9px 12px;font-weight:700;cursor:pointer}
+.wima-tools button:hover{background:#f0df9b}
+.wima-back{display:inline-block;margin:10px 0 0;color:#5b3b8c;text-decoration:none;font-size:13px;font-weight:700}
+@media print{.wima-topbar,.wima-tools,.wima-back{display:none!important}}
+</style></head>
 <body>
 <header class="hero"><div class="wrap">
 <div class="eyebrow">Wima Builders | Executive Operating Plan</div>
@@ -33,9 +45,14 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 <p class="small">Purpose: convert Wima's current market presence, Deal Hub launch and Jamal Industries relationship into measurable demand, transactions, projects, trust assets and operating data.</p>
 </div></header>
 
-<main class="wrap">
+<nav class="wima-topbar" aria-label="Document navigation">
+<div class="wrap"><div class="wima-nav"><a href="#top">↑ Top</a><a href="#section-1-1-executive-mandate">1. Executive Mandate</a><a href="#section-2-2-strategic-north-star">2. Strategic North Star</a><a href="#section-3-3-the-90-day-flywheel">3. The 90-Day Flywheel</a><a href="#section-4-4-executive-priorities">4. Executive Priorities</a><a href="#section-5-5-phase-i-days-1-30-prove-the-engine">5. Phase I — Days 1–30: Prove the Engine</a><a href="#section-6-6-phase-ii-days-31-60-build-repeatability">6. Phase II — Days 31–60: Build Repeatability</a><a href="#section-7-7-phase-iii-days-61-90-institutionalise-amp-prepare-to-scale">7. Phase III — Days 61–90: Institutionalise &amp; Prepare to Scale</a><a href="#section-8-8-kpi-command-centre">8. KPI Command Centre</a><a href="#section-9-9-operating-cadence">9. Operating Cadence</a><a href="#section-10-10-wima-trust-architecture">10. Wima Trust Architecture</a><a href="#section-11-11-jamal-industries-strategic-partnership-agenda">11. Jamal Industries Strategic Partnership Agenda</a><a href="#section-12-12-the-data-moat-start-now">12. The Data Moat — Start Now</a><a href="#section-13-13-technology-rule">13. Technology Rule</a><a href="#section-14-14-signature-sales-engine">14. Signature Sales Engine</a><a href="#section-15-15-risk-register">15. Risk Register</a><a href="#section-16-16-day-90-board-review">16. Day-90 Board Review</a><a href="#section-17-17-executive-scorecard-blank-baseline">17. Executive Scorecard — Blank Baseline</a><a href="#section-18-18-90-day-management-principle">18. 90-Day Management Principle</a></div></div>
+<div class="wima-progress"><span id="wima-progress"></span></div></nav><main class="wrap" id="top"><div class="wima-tools" aria-label="Document tools">
+<button type="button" id="wima-print">Print / Save PDF</button>
+<button type="button" id="wima-top">Back to Top</button>
+</div>
 <section>
-<h2>1. Executive Mandate</h2>
+<h2 id="section-1-1-executive-mandate">1. Executive Mandate</h2>
 <div class="callout"><strong>The next 90 days are not primarily a technology project.</strong> They are a commercial proof-and-systemisation sprint. Wima should use technology only where it removes friction from a workflow that has already been proven manually.</div>
 <div class="grid">
 <div class="card"><div class="kpi">01</div><h3>Prove Demand</h3><p>Generate qualified enquiries, RFQs, quotations and paid transactions through Deal Hub and Signature.</p></div>
@@ -45,7 +62,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>2. Strategic North Star</h2>
+<h2 id="section-2-2-strategic-north-star">2. Strategic North Star</h2>
 <p><strong>Wima Builders is building a Construction Procurement &amp; Project Execution Network.</strong></p>
 <table><tr><th>Business Engine</th><th>Role</th><th>Customer promise</th></tr>
 <tr><td><strong>Wima Deal Hub</strong></td><td>Demand &amp; Commerce</td><td>Buy smarter.</td></tr>
@@ -58,13 +75,13 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>3. The 90-Day Flywheel</h2>
+<h2 id="section-3-3-the-90-day-flywheel">3. The 90-Day Flywheel</h2>
 <div class="callout"><strong>Marketing / Content → Qualified Enquiry → Deal Hub / Signature → RFQ → Quote Comparison → Procurement → Delivery / Installation → Project Record → Testimonial / Showcase → More Demand.</strong></div>
 <p>Every completed transaction should strengthen Wima's next transaction. Every project should create reusable evidence, content, supplier intelligence and customer trust.</p>
 </section>
 
 <section>
-<h2>4. Executive Priorities</h2>
+<h2 id="section-4-4-executive-priorities">4. Executive Priorities</h2>
 <div class="grid">
 <div class="card"><h3>Priority 1 — Revenue</h3><ul><li>Push Deal Hub demand.</li><li>Convert enquiries on WhatsApp.</li><li>Sell product bundles, not only individual products.</li></ul></div>
 <div class="card"><h3>Priority 2 — Signature</h3><ul><li>Launch five productised transformation offers.</li><li>Acquire and execute 5 strong pilot projects.</li><li>Document before → procurement → execution → after.</li></ul></div>
@@ -76,7 +93,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>5. Phase I — Days 1–30: Prove the Engine</h2>
+<h2 id="section-5-5-phase-i-days-1-30-prove-the-engine">5. Phase I — Days 1–30: Prove the Engine</h2>
 <div class="phase card"><h3>Objective</h3><p>Create measurable commercial traction and establish the operating discipline for Deal Hub + Signature.</p></div>
 <table>
 <tr><th>Week</th><th>Commercial</th><th>Operations</th><th>Brand / Marketing</th><th>Data</th></tr>
@@ -89,7 +106,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>6. Phase II — Days 31–60: Build Repeatability</h2>
+<h2 id="section-6-6-phase-ii-days-31-60-build-repeatability">6. Phase II — Days 31–60: Build Repeatability</h2>
 <div class="phase card"><h3>Objective</h3><p>Turn individual wins into repeatable packages, workflows and trust assets.</p></div>
 <div class="grid2">
 <div class="card"><h3>Signature Productisation</h3><ul><li>Signature Ceiling Transformation</li><li>Signature Office Transformation</li><li>Signature Exterior Transformation</li><li>Signature Airbnb / Short-Stay Transformation</li><li>Signature Diaspora Project Execution</li></ul></div>
@@ -101,7 +118,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>7. Phase III — Days 61–90: Institutionalise &amp; Prepare to Scale</h2>
+<h2 id="section-7-7-phase-iii-days-61-90-institutionalise-amp-prepare-to-scale">7. Phase III — Days 61–90: Institutionalise &amp; Prepare to Scale</h2>
 <div class="phase card"><h3>Objective</h3><p>Convert operational learning into an investable operating system and prepare a controlled RFQ/tender beta.</p></div>
 <table>
 <tr><th>Workstream</th><th>90-Day Deliverable</th><th>Scale Decision</th></tr>
@@ -116,7 +133,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>8. KPI Command Centre</h2>
+<h2 id="section-8-8-kpi-command-centre">8. KPI Command Centre</h2>
 <table>
 <tr><th>Category</th><th>Primary KPI</th><th>Supporting KPIs</th></tr>
 <tr><td>Demand</td><td>Qualified Project Enquiries</td><td>Website leads, WhatsApp leads, source, response time</td></tr>
@@ -131,7 +148,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>9. Operating Cadence</h2>
+<h2 id="section-9-9-operating-cadence">9. Operating Cadence</h2>
 <div class="grid">
 <div class="card"><h3>Daily — 15 min</h3><p>New leads • quotes due • deliveries • project blockers • cash/collection issues.</p></div>
 <div class="card"><h3>Weekly — 60 min</h3><p>Pipeline • RFQs • conversions • supplier performance • marketing • project status.</p></div>
@@ -140,7 +157,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>10. Wima Trust Architecture</h2>
+<h2 id="section-10-10-wima-trust-architecture">10. Wima Trust Architecture</h2>
 <p>Trust should become a designed operating system rather than a marketing slogan.</p>
 <table>
 <tr><th>Asset</th><th>Evidence to capture</th></tr>
@@ -152,7 +169,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>11. Jamal Industries Strategic Partnership Agenda</h2>
+<h2 id="section-11-11-jamal-industries-strategic-partnership-agenda">11. Jamal Industries Strategic Partnership Agenda</h2>
 <p>Move the relationship from “supplier” toward a structured strategic launch partnership, subject to commercial agreement.</p>
 <ul>
 <li>Priority product availability and lead-time visibility.</li>
@@ -166,7 +183,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>12. The Data Moat — Start Now</h2>
+<h2 id="section-12-12-the-data-moat-start-now">12. The Data Moat — Start Now</h2>
 <p>Use a simple Airtable/Google Sheet initially. The structure matters more than the software.</p>
 <table>
 <tr><th>Record</th><th>Minimum fields</th></tr>
@@ -180,13 +197,13 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>13. Technology Rule</h2>
+<h2 id="section-13-13-technology-rule">13. Technology Rule</h2>
 <div class="callout"><strong>Do not build the tender platform first.</strong><br>Run the workflow manually → identify repetition → standardise → measure → automate → then scale.</div>
 <p>The first software requirement should come from observed bottlenecks in actual RFQs and projects, not from a feature wishlist.</p>
 </section>
 
 <section>
-<h2>14. Signature Sales Engine</h2>
+<h2 id="section-14-14-signature-sales-engine">14. Signature Sales Engine</h2>
 <div class="grid2">
 <div class="card"><h3>Build This Look</h3><p>Show a completed transformation → identify the system/materials → request pricing → schedule consultation → execute.</p></div>
 <div class="card"><h3>Project Desk</h3><p>Customer describes the desired outcome → Wima structures scope → sources → coordinates → monitors → documents completion.</p></div>
@@ -194,7 +211,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>15. Risk Register</h2>
+<h2 id="section-15-15-risk-register">15. Risk Register</h2>
 <table>
 <tr><th>Risk</th><th>Early warning</th><th>Response</th></tr>
 <tr><td>Price competition</td><td>Leads focus only on cheapest quote.</td><td>Sell trust, bundles, execution, transparency and verified supply.</td></tr>
@@ -207,7 +224,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>16. Day-90 Board Review</h2>
+<h2 id="section-16-16-day-90-board-review">16. Day-90 Board Review</h2>
 <p>At the end of the sprint, leadership should answer six questions with evidence:</p>
 <ol>
 <li>Which customer segments generate the strongest qualified demand?</li>
@@ -221,7 +238,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>17. Executive Scorecard — Blank Baseline</h2>
+<h2 id="section-17-17-executive-scorecard-blank-baseline">17. Executive Scorecard — Blank Baseline</h2>
 <table>
 <tr><th>Metric</th><th>Baseline</th><th>Day 30</th><th>Day 60</th><th>Day 90</th><th>Owner</th></tr>
 <tr><td>Qualified enquiries</td><td>—</td><td></td><td></td><td></td><td>Commercial</td></tr>
@@ -236,7 +253,7 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 </section>
 
 <section>
-<h2>18. 90-Day Management Principle</h2>
+<h2 id="section-18-18-90-day-management-principle">18. 90-Day Management Principle</h2>
 <div class="callout"><strong>Do not measure success by how much Wima builds. Measure success by how much better construction procurement and project execution become for the customer — and whether Wima can repeat that outcome profitably.</strong></div>
 </section>
 </main>
@@ -245,4 +262,12 @@ ul{padding-left:21px}.owner{font-weight:700;color:var(--purple)} .footer{margin-
 <p><strong>Wima Builders</strong> — 90-Day Execution Sprint | Executive Working Document</p>
 <p class="small">Prepared for internal strategic execution. Version 1.0 — 25 September 2026.</p>
 </div></footer>
-</body></html>
+<script id="wima-nav-js">
+(function(){
+const p=document.getElementById('wima-progress');
+function update(){const d=document.documentElement,m=d.scrollHeight-d.clientHeight;p.style.width=(m>0?(scrollY/m)*100:0)+'%';}
+addEventListener('scroll',update,{passive:true});update();
+document.getElementById('wima-print').addEventListener('click',()=>print());
+document.getElementById('wima-top').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+})();
+</script></body></html>
